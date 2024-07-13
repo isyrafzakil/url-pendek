@@ -11,7 +11,7 @@ Make sure you have the following installed:
 - Ruby (version 3.3.0 or later)
 - Rails (version 7.2 or later)
 - PostgreSQL (or your preferred database)
-- Node.js and Yarn
+- Node.js
 
 ### Installation Steps
 
@@ -25,7 +25,6 @@ Make sure you have the following installed:
 
    ```sh
    bundle install
-   yarn install
    ```
 
 3. Set up the database:
@@ -33,7 +32,6 @@ Make sure you have the following installed:
    ```sh
    rails db:create
    rails db:migrate
-   rails db:seed
    ```
 
 4. Run the Rails server:
@@ -50,7 +48,6 @@ Make sure you have the following installed:
 - Rails
 - PostgreSQL (or your preferred database)
 - Node.js
-- Yarn
 - HTTParty (for fetching the title of the long URL)
 - RSpec (for testing)
 
