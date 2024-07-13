@@ -1,24 +1,63 @@
-# README
+# URL Shortener Application
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a URL shortener application built with Ruby on Rails. The application allows users to shorten URLs and provides a usage report for each shortened URL, including the number of clicks, originating geolocation, and timestamp of each visit.
 
-Things you may want to cover:
+## Installation Guide
 
-* Ruby version
+### Prerequisites
 
-* System dependencies
+Make sure you have the following installed:
 
-* Configuration
+- Ruby (version 3.3.0 or later)
+- Rails (version 7.2 or later)
+- PostgreSQL (or your preferred database)
+- Node.js and Yarn
 
-* Database creation
+### Installation Steps
 
-* Database initialization
+1. Clone the repository:
 
-* How to run the test suite
+   ```sh
+   git clone https://github.com/isyrafzakil/url-pendek.git
+   ```
 
-* Services (job queues, cache servers, search engines, etc.)
+2. Install dependencies:
 
-* Deployment instructions
+   ```sh
+   bundle install
+   yarn install
+   ```
 
-* ...
+3. Set up the database:
+
+   ```sh
+   rails db:create
+   rails db:migrate
+   rails db:seed
+   ```
+
+4. Run the Rails server:
+
+   ```sh
+   rails server
+   ```
+
+5. Visit [http://localhost:3000](http://localhost:3000) in your browser to use the application.
+
+### Dependencies
+
+- Ruby
+- Rails
+- PostgreSQL (or your preferred database)
+- Node.js
+- Yarn
+- HTTParty (for fetching the title of the long URL)
+- RSpec (for testing)
+
+### Running Tests
+
+To run the test suite, use the following command:
+
+```sh
+bundle exec rspec
+```
