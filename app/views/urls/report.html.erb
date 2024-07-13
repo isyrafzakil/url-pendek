@@ -1,0 +1,26 @@
+<div class="container mt-5">
+  <h1 class="mb-4">Usage Report</h1>
+
+  <% @urls.each do |url| %>
+    <div class="card">
+      <div class="card-header">
+        <strong>Short URL:</strong> <%= link_to shortened_url_path(url.short_code), shortened_url_path(url.short_code), target: "_blank" %>
+      </div>
+      <div class="card-body">
+        <p><strong>Original URL:</strong> <%= link_to url.long_url, url.long_url, target: "_blank" %></p>
+        <p><strong>Title:</strong> <%= url.title %></p>
+        <p><strong>Total Clicks:</strong> <%= url.clicks.count %></p>
+        <h5>Click Details</h5>
+        <ul class="list-group">
+          <% url.clicks.each do |click| %>
+            <li class="list-group-item">
+              <span class="click-info">
+                IP: <%= click.remote_ip %>, Location: <%= click.geolocation %>, Time: <%= click.clicked_at %>
+              </span>
+            </li>
+          <% end %>
+        </ul>
+      </div>
+    </div>
+  <% end %>
+</div>
