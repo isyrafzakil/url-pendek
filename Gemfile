@@ -40,7 +40,7 @@ gem 'rspec-rails', group: [:development, :test]
 gem 'factory_bot_rails', group: [:development, :test]
 gem 'decorator'
 gem 'rails-controller-testing'
-
+gem 'pg', '>= 0.18', '< 2.0'
 
 
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
