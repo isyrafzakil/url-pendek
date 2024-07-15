@@ -62,3 +62,5 @@ bundle exec rspec
 ## See it live
 
 Visit [https://url-pendek.onrender.com/](https://url-pendek.onrender.com/)
+
+To view the report: [https://url-pendek.onrender.com/urls/report](https://url-pendek.onrender.com/urls/report)
