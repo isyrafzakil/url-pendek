@@ -58,3 +58,7 @@ To run the test suite, use the following command:
 ```sh
 bundle exec rspec
 ```
+
+## See it live
+
+Visit [https://url-pendek.onrender.com/](https://url-pendek.onrender.com/)
